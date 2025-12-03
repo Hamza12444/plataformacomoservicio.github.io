@@ -1,0 +1,63 @@
+:root {
+    --primary-color: #A0522D; 
+    --secondary-color: #F5DEB3; 
+    --dark-bg: #1A1A1A;
+    --card-bg: #2D2D2D; 
+}
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--dark-bg);
+    color: #E5E5E5;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+
+main {
+    flex-grow: 1; 
+}
+
+
+.header-bg {
+    background-color: rgba(26, 26, 26, 0.95);
+}
+
+
+.btn-primary {
+    background-color: var(--primary-color);
+    transition: background-color 0.3s;
+}
+.btn-primary:hover {
+    background-color: #8B4513; 
+}
+.active-link {
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+
+.card {
+    background-color: var(--card-bg);
+    transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+input[type="text"], 
+input[type="email"], 
+textarea {
+    border: 1px solid #4A4A4A;
+    background-color: #3D3D3D; 
+    color: #E5E5E5;
+}
+
+input:focus, 
+textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(160, 82, 45, 0.5);
+}
